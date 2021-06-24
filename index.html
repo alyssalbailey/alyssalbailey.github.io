@@ -18,8 +18,16 @@
 
     <!-- Navigation menu-->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-4">
+    <nav class="navbar navbar-expand-lg navbar-light p-2 fixed-top" style="background-color: #e3f2fd;">
         <div class="container-fluid">
+            <a class="navbar-brand order-1" href="https://www.linkedin.com/in/alyssalbailey/" target="_blank">
+                <img src="images/linkedin-icon.png" alt="" width="40" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- removed the styles "navbar-dark bg-dark"-->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -31,7 +39,7 @@
                         <!-- This will be an intro paragraph about myself, which is not yet created-->
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="#projects" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="Web Development Projects Section">
                             Web Development Projects
                         </a>
@@ -59,22 +67,21 @@
     </nav> <!-- Navigation menu-->
     <!-- Jumbotron-->
 
-    <div class="jumbotron-fluid" id="home">
-        <h1 class="display-4">Hello,</h1>
-        <h2>I'm Alyssa</h2>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-            to featured content or information.
-        <p>
-
+    <div class="jumbotron jumbotron-fluid p-4" id="home">
+        <div class="container text-sm-right pt-5 mt-5">
+            <h1 class="display-2">Hello,</h1>
+            <p class="lead display-5">I'm Alyssa!</p>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
+                to featured content or information.
+            <p>
+        </div>
     </div> <!-- /Jumbotron-->
 
-    <!--Introductary Paragraph-->
-    <h2>Some nice header 1</h2>
-    <p>Introduction paragraph :)</p>
 
     <!-- Cards for Projects Completed [main portfolio section]-->
     <main>
-        <section class="container">
+
+        <section class="container" id="#projects">
             <div class="row">
                 <!-- <div class="card-group"> -->
 
@@ -87,7 +94,7 @@
                                 custom
                                 text and improving the look of the web page.</p>
                             <a href="https://github.com/alyssalbailey/techdegree-project-1" target="_blank"
-                                class="btn btn-primary">Get
+                                class="btn btn-primary text-white">Get
                                 Project Code</a>
                         </div>
                     </div>
@@ -101,7 +108,7 @@
                             <p class="card-text">Designing web pages that look and function across multiple devices
                                 using HTML, CSS and responsive design. </p>
                             <a href="https://github.com/alyssalbailey/techdegree-project-2" target="_blank"
-                                class="btn btn-primary">Get
+                                class="btn btn-primary text-white">Get
                                 Project Code</a>
                         </div>
                     </div>
@@ -116,7 +123,7 @@
                                 of
                                 HTML form elements.</p>
                             <a href="https://github.com/alyssalbailey/techdegree-project-3" target="_blank"
-                                class="btn btn-primary">Get
+                                class="btn btn-primary text-white">Get
                                 Project Code</a>
                         </div>
                     </div>
@@ -131,7 +138,7 @@
                                 custom Bootstrap that I can drop into any project to speed up styling, layout
                                 and development.</p>
                             <a href="https://github.com/alyssalbailey/web-style-guide" target="_blank"
-                                class="btn btn-primary">Get
+                                class="btn btn-primary text-white">Get
                                 Project Code</a>
                         </div>
                     </div>
@@ -147,7 +154,7 @@
                                 photo sites to e-commerce applications. Using HTML, CSS and JavaScript to create an
                                 interactive, searchable gallery of photos.</p>
                             <a href="https://github.com/alyssalbailey/photo-gallery" target="_blank"
-                                class="btn btn-primary">Get Project
+                                class="btn btn-primary text-white">Get Project
                                 Code</a>
                         </div>
                     </div>
@@ -164,7 +171,7 @@
                                 by
                                 entering different letters into the program.</p>
                             <a href="https://github.com/alyssalbailey/game-show-app" target="_blank"
-                                class="btn btn-primary">Get Project
+                                class="btn btn-primary text-white">Get Project
                                 Code</a>
                         </div>
                     </div>
@@ -182,7 +189,7 @@
                                 that
                                 promotes interactivity and usability.</p>
                             <a href="https://github.com/alyssalbailey/web-app-dashboard" target="_blank"
-                                class="btn btn-primary">Get
+                                class="btn btn-primary text-white">Get
                                 Project Code</a>
                         </div>
                     </div>
@@ -199,7 +206,7 @@
                                 JavaScript, I created an employee directory by communicating with a third-party
                                 API.</p>
                             <a href="https://github.com/alyssalbailey/employee-directory" target="_blank"
-                                class="btn btn-primary">Get
+                                class="btn btn-primary text-white">Get
                                 Project Code</a>
                         </div>
                     </div>
@@ -212,6 +219,25 @@
 
         <h2>Achievements/Certifications</h2>
 
+        <!-- footer navigation -->
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#achievements">Achievements/Certifications</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/alyssalbailey/" target="_blank">LinkedIn</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mailto:alyssabailey@me.com" tabindex="-1" aria-disabled="true">Send a
+                    Message</a>
+            </li>
+        </ul>
     </main>
 
     <!-- Bootstrap: Separate script solution, Popper first than their JS plugins-->

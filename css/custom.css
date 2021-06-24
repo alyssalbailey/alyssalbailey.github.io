@@ -1,10 +1,4 @@
-
-
-.navlink {
-    color: black;
-}
-
-.jumbotron-fluid {
-    background-color: #22252A;
-    color: white;
+.image-break {
+    background-image: url(../images/background.png);
+   
 }
