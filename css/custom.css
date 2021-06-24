@@ -1,9 +1,10 @@
 
-/* portofilio cards */
 
+.navlink {
+    color: black;
+}
 
-
-.card-body a {
-    display: flex;
-    align-items: center;
+.jumbotron-fluid {
+    background-color: #22252A;
+    color: white;
 }
