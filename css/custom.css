@@ -1,4 +1,8 @@
-.image-break {
-    background-image: url(../images/background.png);
-   
+.navbar {
+    background-image: url('../images/background-black.png'); /* photo needs updating */
+    background-repeat: repeat;
+}
+
+.navbar a {
+    color: white;
 }
