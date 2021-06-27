@@ -17,13 +17,10 @@
 <body>
 
     <!-- Navigation menu-->
-
     <nav class="navbar navbar-expand-lg p-2 fixed-top">
         <div class="container-fluid">
-            <!-- <a class="navbar-brand order-1" href="https://www.linkedin.com/in/alyssalbailey/" target="_blank">
-                <img src="images/linkedin-icon.png" alt="" width="30" height="30"> -->
             </a>
-            <!-- hamburger menu -->
+            <!-- hamburger menu on smaller devices-->
             <button class="navbar-toggler border-white border-1" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -34,10 +31,6 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="Home Section" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="About Section" href="#about">About</a>
-                        <!-- This will be an intro paragraph about myself, which is not yet created-->
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="Projects Section" href="#projects">Projects</a>
@@ -58,7 +51,7 @@
             <h1 class="display-2">Hello,</h1>
             <p class="lead display-5 text-info">I'm Alyssa!</p>
             <p class="lead">I’m a digital marketing strategist with a strong background in search engine optimization.
-                I have 5+ years experience across a wide variety of clients in the United States and Canada.
+                I have 5+ years experience across a wide variety of clients in both domestic and international markets.
                 I graduated from the University of Akron with a Bachelor of Science in Political Science with a
                 concentration in Criminal Justice.
                 I'm in a front-end web development program to learn HTML, CSS and JavaScript.
@@ -228,7 +221,7 @@
         <!--/Cards for Portfoilio-->
         <br /><br />
 
-        <!--Achievement Horiztonal Cards-->
+        <!-- OLD Achievement Horiztonal Cards uSING FOR STYLE TO UPATE-->
         <div class="container achivement-container mt-5">
             <h2 class="mb-3 display-5">Achievements</h2>
             <div class="card mb-3" style="max-width: 500px;">
@@ -238,41 +231,88 @@
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      <h5 class="card-title">Achievement</h5>
+                      <p class="card-text">Building Forms With Bootstrap</p>
+                      <p class="card-text fw-bold">Achieved</p>
+                      <div class="col-md-4 order-1 bg-light">
+                        <img src="images/checkmark.svg" class="img-fluid rounded-start" alt="Green checkmark">
+                      </div>
+                      <p class="card-text"><small class="text-muted">June 20, 2021</small></p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="card mb-3" style="max-width: 500px;">
-              <div class="row g-0">
-                <div class="col-md-4 order-1 bg-light">
-                  <img src="images/treehouse-badge-placeholder.png" class="img-fluid rounded-start" alt="Achievement icon">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
             </div>
+        </div> <!-- / OLD Achievement Horizontal Cards-->
 
+ 
+        <!-- horizontal cards I'm trying to copy-->
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary">HTML, CSS, JAVASCRIPT</strong> <!-- MAYBE ADD HTML, CSS OR JS TITLE HERE!-->
+                            <h3>Building Forms With Bootstrap</h3>
+                            <p class="card-text mb-1">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="stretched-link">Achieved</a>
+                            <p class="mb-1 text-muted">June 20, 2021</p>
+                        </div>
+                        <div class="col-auto d-none d-lg-block bg-light p-4">
+                         <img width="180" height="200" src="images/treehouse-badge-placeholder.png" aria-label="Achievement Badge"></img>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">HTML, CSS, JAVASCRIPT</strong>
+                        <h3 class="mb-0">Building Forms With Bootstrap</h3>
+                        <div class="mb-1 text-muted">June 20, 2021</div>
+                            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="stretched-link">Continue reading</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                        <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                    </div>
+                </div>
+                </div>
+            </div> <!-- /FIRST TWO HORIZONTAL CARDS-->
 
+            <!-- BEGINNING OF THE NEXT HORIZONTAL CARDS TEST LAST TWO CARDS-->
+            <div class="row mb-2">
+                <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">HTML, CSS, JAVASCRIPT</strong>
+                    <h3 class="mb-0">Building Forms With Bootstrap</h3>
+                    <div class="mb-1 text-muted">June 20, 2021</div>
+                    <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                    <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-success">HTML, CSS, JAVASCRIPT</strong>
+                    <h3 class="mb-0">Building Forms With Bootstrap</h3>
+                    <div class="mb-1 text-muted">June 20, 2021</div>
+                    <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                    <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
-
-
-
-
-
-
-
-        </div> <!-- /Achievement Horizontal Cards-->
+                    </div>
+                </div>
+                </div>
+            </div> <!-- END OF THE SECOND HORIZONTAL TEST-->
 
 
         <!-- footer navigation -->
