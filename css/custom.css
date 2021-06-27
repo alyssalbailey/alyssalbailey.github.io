@@ -6,3 +6,11 @@
 .navbar a {
   color: white;
 }
+
+a,
+a:hover,
+a:visited,
+a:focus {
+  text-decoration: none;
+  color: #96d673;
+}
