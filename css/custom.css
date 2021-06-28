@@ -1,5 +1,6 @@
+/* Main navigation */
 .navbar {
-  background-image: url("../images/background-black.png"); /* photo needs updating */
+  background-image: url("../images/background-black.png");
   background-repeat: repeat;
 }
 
@@ -9,8 +10,20 @@
 
 a,
 a:hover,
-a:visited,
 a:focus {
   text-decoration: none;
   color: #96d673;
+}
+
+.btn {
+  background-color: #0399ff;
+}
+
+/* Achievement Badges */
+.checkmark {
+  margin-right: 9px;
+}
+
+.checkmark-text {
+  display: flex;
 }

@@ -11,7 +11,8 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="css/custom.css" rel="stylesheet">
 
-    <title>Alyssa Bailey: HTML, CSS and Javascript Project Portfolio</title>
+    <title>Alyssa Bailey Project Portfolio: HTML, CSS and Javascript</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
     <!-- Navigation menu-->
     <nav class="navbar navbar-expand-lg p-2 fixed-top">
         <div class="container-fluid">
-            </a>
+
             <!-- hamburger menu on smaller devices-->
             <button class="navbar-toggler border-white border-1" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -30,14 +31,17 @@
 
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="Home Section" href="#home">Home</a>
+                        <a class="nav-link" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="Projects Section" href="#projects">Projects</a>
+                        <a class="nav-link" aria-current="page" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="Achievements & Certiciations Section"
-                            href="#achievements">Achievements/Certifications</a>
+                        <a class="nav-link" aria-current="page" href="#skills">Professional Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" 
+                        href="#achievements">Achievements/Certifications</a>
                     </li>
                 </ul>
 
@@ -46,24 +50,22 @@
     </nav> <!-- Navigation menu-->
     <!-- Jumbotron-->
 
-    <div class="jumbotron jumbotron-fluid p-4" id="home">
+    <div class="jumbotron jumbotron-fluid p-4" id="#home">
         <div class="container text-sm-right pt-5 mt-5">
             <h1 class="display-2">Hello,</h1>
             <p class="lead display-5 text-info">I'm Alyssa!</p>
-            <p class="lead">I’m a search engine optimization strategist with a strong background in full-service digital marketing.
+            <p class="lead">I’m a search engine optimization (SEO) strategist who has a strong background in many facets of digital marketing.
                 I have 5+ years experience building data-driven strategies across a wide variety of clients in both domestic and international markets.
-                I'm in a front-end web development program to learn HTML, CSS and JavaScript.
             </p>
             <p class="lead">I am a life-long learner, so it helps that I am a fast learner who is extremely inquisitive, extremely organized and genuinely loves to challenge myself.
                  Whether I’m enrolling in tap class or booking a flight to Huntsville, Alabama to attend <a href="https://www.spacecamp.com/space/adult/advanced" target="_blank" class="link-warning">Adult Space Camp</a>
-                 , I like to get out of my comfort zone and discover new ideas in non-traditional classrooms, so to speak. 
-                That’s some background about me, and I’m excited to learn more about the opportunity.
+                 , I like to get out of my comfort zone and discover new ideas in non-traditional classrooms, so to speak.
             </p>
         </div>
     </div> <!-- /Jumbotron-->
 
 
-    <!-- Cards for Projects Completed [main portfolio section]-->
+    <!-- Cards for Portofilio Proojects Completed-->
     <main>
 
         <section class="container" id="#projects">
@@ -79,9 +81,12 @@
                                     graphics,
                                     custom
                                     text and improving the look of the web page.</p>
-                                <a href="https://github.com/alyssalbailey/techdegree-project-1" target="_blank"
-                                    class="btn btn-primary text-white">Get
-                                    Project Code</a>
+                            
+                                    <div class="d-flex align-items-end"> <!-- trying to get button on the bottom of the card-->
+                                        <a href="https://github.com/alyssalbailey/techdegree-project-1" target="_blank"
+                                            class="btn btn-primary text-white">Get
+                                            Project Code</a>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -219,136 +224,154 @@
                     </div>
                 </div>
             </div>
+        <section> <!--/Cards for Portfoilio-->
 
-        </section>
-        <!--/Cards for Portfoilio-->
-        <br /><br />
 
-        <!-- OLD Achievement Horiztonal Cards uSING FOR STYLE TO UPATE-->
-        <div class="container achivement-container mt-5">
-            <h2 class="mb-3 display-5">Achievements</h2>
-            <div class="card mb-3" style="max-width: 500px;">
-                <div class="row g-0">
-                  <div class="col-md-4 order-1 bg-light">
-                    <img src="images/treehouse-badge-placeholder.png" class="img-fluid rounded-start" alt="Achievement icon">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Achievement</h5>
-                      <p class="card-text">Building Forms With Bootstrap</p>
-                      <p class="card-text fw-bold">Achieved</p>
-                      <div class="col-md-4 order-1 bg-light">
-                        <img src="images/checkmark.svg" class="img-fluid rounded-start" alt="Green checkmark">
-                      </div>
-                      <p class="card-text"><small class="text-muted">June 20, 2021</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <!-- Achievement Horiztonal Cards -->
+        <div class="achivement-container mt-5">
+            <h2 class="mb-2 display-5">Achievements</h2>
+            <p class="lead">View the collection of badges I earned that represent my experience, expertise and accomplishments
+                in front-end web development.
+            </p>
 
-            </div>
-        </div> <!-- / OLD Achievement Horizontal Cards-->
-
- 
-        <!-- horizontal cards I'm trying to copy-->
-            <div class="row mb-2">
+            <!-- placeholders-->
+            <div class="row mb-2" id="#achievements">
                 <div class="col-md-6">
                     <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                         <div class="col p-4 d-flex flex-column position-static">
-                            <strong class="d-inline-block mb-2 text-primary">HTML, CSS, JAVASCRIPT</strong> <!-- MAYBE ADD HTML, CSS OR JS TITLE HERE!-->
-                            <h3>Building Forms With Bootstrap</h3>
-                            <p class="card-text mb-1">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="stretched-link">Achieved</a>
-                            <p class="mb-1 text-muted">June 20, 2021</p>
+                            <strong class="d-inline-block mb-2 text-primary">HTML CSS JAVASCRIPT</strong> <!-- MAYBE ADD HTML, CSS OR JS TITLE HERE!-->
+                            <h3 class="mb-3">Building Forms With Bootstrap</h3>
+                            <div class="checkmark-text">
+                                <img src="images/checkmark.svg" class="checkmark" alt="checkmark" height="28" width="28">
+                                <div class="d-flex flex-column">
+                                    <p class="text-muted fw-bold m-0">Achieved</p>
+                                    <p class="mb-1 text-muted">June 20, 2021</p> 
+                                </div>
+                            </div>  
                         </div>
                         <div class="col-auto d-none d-lg-block bg-light p-4">
-                         <img width="180" height="200" src="images/treehouse-badge-placeholder.png" aria-label="Achievement Badge"></img>
+                         <img width="150" height="170" src="images/treehouse-badge-placeholder.png" alt="Treehouse Badge Icon">
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6">
-                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-success">HTML, CSS, JAVASCRIPT</strong>
-                        <h3 class="mb-0">Building Forms With Bootstrap</h3>
-                        <div class="mb-1 text-muted">June 20, 2021</div>
-                            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="stretched-link">Continue reading</a>
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary">HTML CSS JAVASCRIPT</strong> <!-- MAYBE ADD HTML, CSS OR JS TITLE HERE!-->
+                            <h3 class="mb-3">Building Forms With Bootstrap</h3>
+                            <div class="checkmark-text">
+                                <img src="images/checkmark.svg" class="checkmark" alt="checkmark" height="28" width="28">
+                                <div class="d-flex flex-column">
+                                    <p class="text-muted fw-bold m-0">Achieved</p>
+                                    <p class="mb-1 text-muted">June 20, 2021</p> 
+                                </div>
+                            </div>  
                         </div>
-                        <div class="col-auto d-none d-lg-block">
-                        <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        <div class="col-auto d-none d-lg-block bg-light p-4">
+                         <img width="150" height="170" src="images/treehouse-badge-placeholder.png" alt="Treehouse Badge Icon">
+                        </div>
+                    </div>
                     </div>
                 </div>
-                </div>
-            </div> <!-- /FIRST TWO HORIZONTAL CARDS-->
+            </div>
 
-            <!-- BEGINNING OF THE NEXT HORIZONTAL CARDS TEST LAST TWO CARDS-->
-            <div class="row mb-2">
-                <div class="col-md-6">
+           <div class="row mb-2">
+            <div class="col-md-6">
                 <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
-                    <strong class="d-inline-block mb-2 text-primary">HTML, CSS, JAVASCRIPT</strong>
-                    <h3 class="mb-0">Building Forms With Bootstrap</h3>
-                    <div class="mb-1 text-muted">June 20, 2021</div>
-                    <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="stretched-link">Continue reading</a>
+                        <strong class="d-inline-block mb-2 text-primary">HTML CSS JAVASCRIPT</strong> <!-- MAYBE ADD HTML, CSS OR JS TITLE HERE!-->
+                        <h3 class="mb-3">Building Forms With Bootstrap</h3>
+                        <div class="checkmark-text">
+                            <img src="images/checkmark.svg" class="checkmark" alt="checkmark" height="28" width="28">
+                            <div class="d-flex flex-column">
+                                <p class="text-muted fw-bold m-0">Achieved</p>
+                                <p class="mb-1 text-muted">June 20, 2021</p> 
+                            </div>
+                        </div>  
                     </div>
-                    <div class="col-auto d-none d-lg-block">
-                    <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                    <div class="col-auto d-none d-lg-block bg-light p-4">
+                        <img width="150" height="170" src="images/treehouse-badge-placeholder.png" alt="Achievement Badge">
+                    </div>
+                </div>
+            </div>
 
-                    </div>
-                </div>
-                </div>
-                <div class="col-md-6">
+            <div class="col-md-6">
                 <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
-                    <strong class="d-inline-block mb-2 text-success">HTML, CSS, JAVASCRIPT</strong>
-                    <h3 class="mb-0">Building Forms With Bootstrap</h3>
-                    <div class="mb-1 text-muted">June 20, 2021</div>
-                    <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="stretched-link">Continue reading</a>
+                        <strong class="d-inline-block mb-2 text-primary">HTML CSS JAVASCRIPT</strong> <!-- MAYBE ADD HTML, CSS OR JS TITLE HERE!-->
+                        <h3 class="mb-3">Building Forms With Bootstrap</h3>
+                        <div class="checkmark-text">
+                            <img src="images/checkmark.svg" class="checkmark" alt="checkmark" height="28" width="28">
+                            <div class="d-flex flex-column">
+                                <p class="text-muted fw-bold m-0">Achieved</p>
+                                <p class="mb-1 text-muted">June 20, 2021</p> 
+                            </div>
+                        </div>  
                     </div>
-                    <div class="col-auto d-none d-lg-block">
-                    <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
+                    <div class="col-auto d-none d-lg-block bg-light p-4">
+                     <img width="150" height="170" src="images/treehouse-badge-placeholder.png" alt="Achievement Badge">
                     </div>
                 </div>
                 </div>
-            </div> <!-- END OF THE SECOND HORIZONTAL TEST-->
+            </div> 
+        </section><!-- end of the achievement container-->
 
-
-        <!-- footer navigation -->
-        <footer class="footer bg-light">
-            <ul class="nav justify-content-center mt-5">
-                <li class="nav-item">
-                    <a class="nav-link text-muted" aria-current="page" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-muted" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-muted" href="#achievements">Achievements/Certifications</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-muted" href="https://www.linkedin.com/in/alyssalbailey/" target="_blank">LinkedIn</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-muted" href="mailto:alyssabailey@me.com" tabindex="-1">Send a
-                        Message</a>
-                </li>
-            </ul>
-        </footer>
     </main>
-    <script src="js/app.js"></script>
-    <!-- Bootstrap: Separate script solution, Popper first than their JS plugins-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
+        <!-- footer navigation -->
+        <footer class="footer bg-light p-2">
+            <div class="row m-0">
+                <div class="col-md-7">
+                   
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link text-muted" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-muted" href="#projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-muted" href="#skills">Professional Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-muted" href="#achievements">Achievements/Certifications</a>
+                            </li>
+                        </ul>
+                </div>
 
-</body>
+                <div class="col-md">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item p-2">
+                                    <a href="https://twitter.com/alyssabailey_" target="#_blank">
+                                        <img src="images/twitter.svg" alt="LinkedIn" height="30" width="30">
+                                    </a>
+                                </li>
+                            
+                            <li class="nav-item p-2">
+                                <a href="https://www.linkedin.com/in/alyssalbailey/" target="#_blank">
+                                    <img src="images/linkedin.svg" alt="LinkedIn" height="30" width="30">
+                                </a>
+                            </li>
+
+                            <li class="nav-item p-2">
+                                <a href="https://github.com/alyssalbailey" target="#_blank">
+                                    <img src="images/github.svg" alt="Twitter" height="30" width="30">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </footer>
+  
+        <script src="js/app.js"></script>
+        <!-- Bootstrap: Separate script solution, Popper first than their JS plugins-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
+
+    </body>
 
 </html>
