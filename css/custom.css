@@ -27,11 +27,3 @@ a:focus {
 .checkmark-text {
   display: flex;
 }
-
-.achievement-container {
-  border: red 1px solid;
-}
-
-.achievement-card {
-  border: solid 1px green;
-}
