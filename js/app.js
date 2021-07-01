@@ -23,23 +23,26 @@ function displayBadges(achievementBadge) {
         let classUrl = badge.url;
         let iconUrl = badge.icon_url;
         let date = badge.earned_date;
+
+        
         
     badgeHTML += `
+    <div class="achievement-card">
         <div class="row mb-2">
             <div class="col-md-4">
                 <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
-                        <h4 class="mb-3">${badge.name}</h4>
+                        <h5 class="mb-3">${name}</h5>
                         <div class="checkmark-text">
                             <img src="images/checkmark.svg" class="checkmark" alt="checkmark" height="28" width="28">
-                            <div class="d-flex flex-column">
+                            <div class="d-flex flex-column justify-content">
                                 <p class="text-muted fw-bold m-0">Achieved</p>
-                                <p class="mb-1 text-muted">${badge.earned_date}</p> 
+                                <p class="mb-1 text-muted">${date}</p> 
                             </div>
                         </div>  
                     </div>
                     <div class="g-0 col-auto d-none d-lg-block bg-light p-4">
-                    <img width="90" height="110" src="${badge.icon_url}" alt="Treehouse Badge Icon">
+                        <img width="90" height="110" src="${iconUrl}" alt="Treehouse Badge Icon">
                     </div>
                 </div>
             </div> 
