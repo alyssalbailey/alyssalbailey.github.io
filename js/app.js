@@ -22,10 +22,10 @@ function displayBadges(achievementBadge) {
         let name = badge.name;
         let classUrl = badge.url;
         let iconUrl = badge.icon_url;
-        let date = badge.earned_date;
-        let newDate = new Date(parseInt(date.substr(6)));
-        
-    
+        let date = new Date(badge.earned_date);
+
+        //parse out the date and format the Month and Year
+        let formattedDate = new Intl.DateTimeFormat(navigator.language, {month: 'long', year: 'numeric'}).format(date);
         
     badgeHTML += `
             <div class="col-md-4">
@@ -36,7 +36,7 @@ function displayBadges(achievementBadge) {
                             <img src="images/checkmark.svg" class="checkmark" alt="checkmark" height="28" width="28">
                             <div class="d-flex flex-column justify-content">
                                 <p class="text-muted fw-bold m-0">Achieved</p>
-                                <p class="mb-1 text-muted">${newDate}</p> 
+                                <p class="mb-1 text-muted">${formattedDate}</p> 
                             </div>
                         </div>  
                     </div>
@@ -51,4 +51,3 @@ function displayBadges(achievementBadge) {
 achievementContainer.innerHTML = badgeHTML;
 
 }
-
