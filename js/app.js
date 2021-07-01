@@ -17,20 +17,16 @@ function displayBadges(achievementBadge) {
     let badgeHTML = ''; // store the achievement badges HTML
 
     // loop through each achievement badge and create HTML markup
-    //badges.forEach(badge => {
+    badges.forEach(badge => {
         let id = badge.id;
         let name = badge.name;
         let classUrl = badge.url;
         let iconUrl = badge.icon_url;
         let date = badge.earned_date;
 
-
-
         
+    badgeHTML += `
         
-    //badgeHTML += `
-    <div class="achievement-card">
-        <div class="row mb-2">
             <div class="col-md-4">
                 <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
@@ -48,9 +44,6 @@ function displayBadges(achievementBadge) {
                     </div>
                 </div>
             </div> 
-        </div>
-    </div>    
-
         `
 });
 
