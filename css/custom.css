@@ -29,12 +29,9 @@ a:focus {
 }
 
 .achievement-container {
-  display: grid;
   border: red 1px solid;
-  grid-template-columns: repeat(3, minmax(1fr);
-  grid-template-rows: auto;
 }
 
 .achievement-card {
-    border: solid 1px green;
+  border: solid 1px green;
 }
