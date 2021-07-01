@@ -23,18 +23,20 @@ function displayBadges(achievementBadge) {
         let classUrl = badge.url;
         let iconUrl = badge.icon_url;
         let date = badge.earned_date;
-
+        let newDate = new Date(parseInt(date.substr(6)));
+        
+    
         
     badgeHTML += `
             <div class="col-md-4">
-                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative h-100">
                     <div class="col p-4 d-flex flex-column position-static">
                         <h5 class="mb-3">${name}</h5>
                         <div class="checkmark-text">
                             <img src="images/checkmark.svg" class="checkmark" alt="checkmark" height="28" width="28">
                             <div class="d-flex flex-column justify-content">
                                 <p class="text-muted fw-bold m-0">Achieved</p>
-                                <p class="mb-1 text-muted">${date}</p> 
+                                <p class="mb-1 text-muted">${newDate}</p> 
                             </div>
                         </div>  
                     </div>
@@ -49,3 +51,4 @@ function displayBadges(achievementBadge) {
 achievementContainer.innerHTML = badgeHTML;
 
 }
+
