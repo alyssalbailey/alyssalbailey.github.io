@@ -26,22 +26,36 @@ function displayBadges(achievementBadge) {
 
         //parse out the date and format the Month and Year
         let formattedDate = new Intl.DateTimeFormat(navigator.language, {month: 'long', year: 'numeric'}).format(date);
+
+        //Sort JSON array by date earned from most recent - IN PROGRESS 
+        //let decendingDates = badges.slice().sort((a,b) => a.formattedDate - b.formattedDate);
+
+         
+
+        
+        // let badges = formattedDate.slice().sort((a,b) => b.id - a.id);
+        
+
         
     badgeHTML += `
-            <div class="col-md-4">
-                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative h-100">
+            <div class="col-md-6 col-xxl-4">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm h-md-250 h-lg-500 position-relative h-100">
                     <div class="col p-4 d-flex flex-column position-static">
-                        <h5 class="mb-3">${name}</h5>
+                        <h6 class="mb-3 text-break" style="max-width: 250px;">${name}</h6>
+                        <div class="tooltip">
+                            <h6 class="mb-3 text-truncate" style="max-width: 250px;"">${name}</h6>
+                        </div>
                         <div class="checkmark-text">
                             <img src="images/checkmark.svg" class="checkmark" alt="checkmark" height="28" width="28">
-                            <div class="d-flex flex-column justify-content">
+                            <div class="d-flex flex-column">
                                 <p class="text-muted fw-bold m-0">Achieved</p>
                                 <p class="mb-1 text-muted">${formattedDate}</p> 
                             </div>
                         </div>  
+                        
                     </div>
-                    <div class="g-0 col-auto d-none d-lg-block bg-light p-4">
-                        <img width="90" height="110" src="${iconUrl}" alt="Treehouse Badge Icon">
+                    <div class="col-auto d-none d-lg-block bg-light p-4">
+                        <img width="78" height="85" src="${iconUrl}" alt="Treehouse Badge Icon">
                     </div>
                 </div>
             </div> 
@@ -51,3 +65,10 @@ function displayBadges(achievementBadge) {
 achievementContainer.innerHTML = badgeHTML;
 
 }
+
+// Using to analze the information
+// fetch(urlAPI)
+//     .then(res => res.json())
+//     .then(res => console.log(res.badges))
+//     .then(displayBadges)
+//     .catch(err => console.log(err));
