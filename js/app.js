@@ -22,15 +22,19 @@ function displayBadges(achievementBadge) {
         let name = badge.name;
         let classUrl = badge.url;
         let iconUrl = badge.icon_url;
+        let courses = badge.courses;
         let date = new Date(badge.earned_date);
 
         //parse out the date and format the Month and Year
         let formattedDate = new Intl.DateTimeFormat(navigator.language, {month: 'long', year: 'numeric'}).format(date);
 
         //Sort JSON array by date earned from most recent - IN PROGRESS 
-        //let decendingDates = badges.slice().sort((a,b) => a.formattedDate - b.formattedDate);
+       // let courseDate = courses.slice().sort((a,b) => a.courses - b.courses);
 
-         
+         badges.sort((a,b) => {
+             return b.formattedDate - a.formattedDate;
+         });
+
 
         
         // let badges = formattedDate.slice().sort((a,b) => b.id - a.id);
@@ -39,9 +43,9 @@ function displayBadges(achievementBadge) {
         
     badgeHTML += `
             <div class="col-md-6 col-xxl-4">
-                <div class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm h-md-250 h-lg-500 position-relative h-100">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm h-md-250 h-lg-500 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
-                        <h6 class="mb-3 text-break" style="max-width: 250px;">${name}</h6>
+                        <h6 class="mb-3 text-truncate" style="max-width: 225px;">${name}</h6>
                         <div class="tooltip">
                             <h6 class="mb-3 text-truncate" style="max-width: 250px;"">${name}</h6>
                         </div>
@@ -67,8 +71,8 @@ achievementContainer.innerHTML = badgeHTML;
 }
 
 // Using to analze the information
-// fetch(urlAPI)
-//     .then(res => res.json())
-//     .then(res => console.log(res.badges))
-//     .then(displayBadges)
-//     .catch(err => console.log(err));
+fetch(urlAPI)
+    .then(res => res.json())
+    .then(res => console.log(res.badges))
+    .then(displayBadges)
+    .catch(err => console.log(err));
