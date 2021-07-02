@@ -1,13 +1,4 @@
-/* Main navigation */
-.navbar {
-  background-image: url("../images/background-black.png");
-  background-repeat: repeat;
-}
-
-.navbar a {
-  color: white;
-}
-
+/* Base Styles */
 a,
 a:hover,
 a:focus {
@@ -17,6 +8,16 @@ a:focus {
 
 .btn {
   background-color: #0399ff;
+}
+
+/* Main Navigation */
+.navbar {
+  background-image: url("../images/background-black.png");
+  background-repeat: repeat;
+}
+
+.navbar a {
+  color: white;
 }
 
 /* Achievement Badges */
