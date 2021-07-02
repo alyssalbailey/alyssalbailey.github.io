@@ -28,16 +28,13 @@ function displayBadges(achievementBadge) {
         //parse out the date and format the Month and Year
         let formattedDate = new Intl.DateTimeFormat(navigator.language, {month: 'long', year: 'numeric'}).format(date);
 
-        //Sort JSON array by date earned from most recent - IN PROGRESS 
+        //Sort JSON data by date earned in decending order - IN PROGRESS 
        // let courseDate = courses.slice().sort((a,b) => a.courses - b.courses);
 
-         badges.sort((a,b) => {
-             return b.formattedDate - a.formattedDate;
-         });
+        //  badges.sort((a,b) => {
+        //      return b.formattedDate - a.formattedDate;
+        //  });
 
-
-        
-        // let badges = formattedDate.slice().sort((a,b) => b.id - a.id);
         
 
         
