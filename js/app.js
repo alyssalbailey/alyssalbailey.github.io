@@ -27,13 +27,6 @@ function displayBadges(achievementBadge) {
 
         //parse out the date + format the month and year
         let formattedDate = new Intl.DateTimeFormat(navigator.language, {month: 'long', year: 'numeric'}).format(date);
-
-        //Sort JSON data by date earned in decending order [ IN PROGRESS ]
-       // let courseDate = courses.slice().sort((a,b) => a.courses - b.courses);
-
-        //  badges.sort((a,b) => {
-        //      return b.formattedDate - a.formattedDate;
-        //  });
         
     badgeHTML += `
             <div class="col-md-6 col-xxl-4">
@@ -64,7 +57,7 @@ achievementContainer.innerHTML = badgeHTML;
 
 }
 
-// Using to analze the information to sort JSON in decending order
+// Using to analze the information to sort JSON data
 fetch(urlAPI)
     .then(res => res.json())
     .then(res => console.log(res.badges))
