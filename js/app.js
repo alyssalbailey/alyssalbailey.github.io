@@ -12,7 +12,7 @@ fetch(urlAPI)
     .catch(err => console.log(err));
 
 function displayBadges(achievementBadge) {
-    badges = achievementBadge;
+    badges = achievementBadge.reverse();
 
     let badgeHTML = ''; // store the achievement badges HTML
 
