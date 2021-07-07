@@ -31,6 +31,13 @@ a:focus {
   color: white;
 }
 
+/* Centering Cards On XS Screens - Bootstrap Doesn't Have XS Class */
+.card {
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+}
+
 /* Achievement Badges */
 .checkmark {
   margin-right: 9px;
