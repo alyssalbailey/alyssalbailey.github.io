@@ -4,7 +4,7 @@ const urlAPI = `("https://teamtreehouse.com/alyssalbailey.json", {'mode': 'no-co
 const achievementContainer = document.querySelector(".achievement-container");
 
 
-// Fetch data from the API 
+// Fetch data from the API
 fetch(urlAPI)
     .then(res => res.json())
     .then(res => res.badges)
