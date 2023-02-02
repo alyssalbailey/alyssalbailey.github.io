@@ -5,7 +5,7 @@ const achievementContainer = document.querySelector(".achievement-container");
 
 
 // Fetch data from the API
-fetch("urlAPI", {'mode':'no-cors'})
+fetch(urlAPI, {'mode': 'no-cors'})
     .then(res => res.json())
     .then(res => res.badges)
     .then(displayBadges)
