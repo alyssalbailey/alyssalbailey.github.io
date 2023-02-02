@@ -46,3 +46,7 @@ a:focus {
 .checkmark-text {
   display: flex;
 }
+
+#achievements {
+  display: hidden;
+}

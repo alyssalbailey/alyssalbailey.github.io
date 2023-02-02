@@ -9,7 +9,6 @@ fetch(urlAPI)
     .then(res => res.json())
     .then(res => res.badges)
     .then(displayBadges)
-    .then(mode: "no-cors")
     .catch(err => console.log(err));
 
 function displayBadges(achievementBadge) {
