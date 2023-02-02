@@ -1,6 +1,6 @@
 
 let badges = [];
-const urlAPI = `("https://teamtreehouse.com/alyssalbailey.json", {'mode': 'no-cors'})`;
+const urlAPI = `(https://teamtreehouse.com/alyssalbailey.json, {'mode': 'no-cors'})`;
 const achievementContainer = document.querySelector(".achievement-container");
 
 
