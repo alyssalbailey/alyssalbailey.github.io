@@ -1,11 +1,11 @@
 
 let badges = [];
-const urlAPI = `https://teamtreehouse.com/alyssalbailey.json`;
+const urlAPI = `https://teamtreehouse.com/profiles/alyssalbailey.json`;
 const achievementContainer = document.querySelector(".achievement-container");
 
 
 // Fetch data from the API
-fetch('urlAPI', {mode: 'no-cors'})
+fetch(urlAPI)
     .then(res => res.json())
     .then(res => res.badges)
     .then(displayBadges)
