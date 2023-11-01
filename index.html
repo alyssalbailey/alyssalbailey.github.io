@@ -61,215 +61,199 @@
     <main>
 
         <section class="container" id="projects">
-            <div class="row justify-content-center">
-                <div class="card-group">
+           <!--Tabbed content navigation-->
+            <nav>
+                <ul class="nav nav-pills nav-fill mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-websites-tab" data-bs-toggle="pill" data-bs-target="#pills-websites" type="button" role="tab" aria-controls="pills-websites" aria-selected="true">Websites</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-development-tab" data-bs-toggle="pill" data-bs-target="#pills-development" type="button" role="tab" aria-controls="pills-development" aria-selected="false">Web Development Projects</button>
+                    </li>
+                  </ul>
+            </nav>
 
+            <!--Tabbed Content Tiles-->
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-websites" role="tabpanel" aria-labelledby="pills-websites-tab" tabindex="0">
+                  
+                  <!--Actual Website Cards in this Website tab-->  
+                    <div class="row justify-content-center">
+                        <div class="card-group">
 
-                <!--essio website Content-->
-                    <div class="col col-md-6 col-lg-4 col-xl-3 mb-3">
-                        <div class="card h-100" style="width: 18rem;">
-                            <img src="images/esseio-logo.png" class="card-img-top" alt="esseio logo">
-                            <div class="card-body">
-                                <h5 class="card-title">esseio</h5>
-                                <p class="card-text">
-                                    Experience the soothing world of DIY home improvement with step-by-step instructions on a new website
-                                     inspired by the ASMR sensations from my YouTube channel.
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://esseio.com/"
-                                    target="#_blank"
-                                    class="btn btn-primary text-white">
-                                    Visit Website
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                <!--Level up Healing Content-->
-                <div class="col col-md-6 col-lg-4 col-xl-3 mb-3">
-                    <div class="card h-100" style="width: 18rem;">
-                        <img src="images/level-up-healing.png" class="card-img-top" alt="Tetris Inspired Logo of Level Up Healing, LLC">
-                        <div class="card-body">
-                            <h5 class="card-title">Level Up Healing</h5>
-                            <p class="card-text">
-                                The Level Up Healing LLC website was designed and developed to help the Reiki practitioner
-                                reach more clients across the United States and improve their overall brand recognition.
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="https://www.leveluphealing.net/"
-                                target="#_blank"
-                                class="btn btn-primary text-white">
-                                Visit Website
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                    <div class="col col-md-6 col-lg-4 col-xl-3 mb-3">
-                        <div class="card h-100" style="width: 18rem;">
-                            <img src="images/employee-directory.png" class="card-img-top" alt="Blue employee card with dark blue silhouette">
-                            <div class="card-body">
-                                <h5 class="card-title">Employee Directory</h5>
-                                <p class="card-text">
-                                    Created an employee directory by communicating with a
-                                    third-party
-                                    API (Random User Generator API) and listed the data in a grid with the employee's thumbnail image, full name, email and location.
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://alyssalbailey.github.io/employee-directory/"
-                                    class="btn btn-primary text-white">
-                                    View Project
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col col-md-6 col-lg-4 col-xl-3 mb-3">
-                        <div class="card h-100" style="width: 18rem;">
-                            <img src="images/web-app.png" class="card-img-top" alt="Desktop Computer with Bar Graphs on screen">
-                            <div class="card-body">
-                                <h5 class="card-title">Web App Dashboard</h5>
-                                <p class="card-text">Built a beautiful, interactive dashboard complete with JavaScript-driven
-                                    charts and graphs using advanced techniques including SVG graphics and user
-                                    interface components
-                                    that promotes interactivity and usability.
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://alyssalbailey.github.io/web-app-dashboard/"
-                                    class="btn btn-primary text-white">
-                                    View Project
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col col-md-6 col-lg-4 col-xl-3 mb-3">
-                        <div class="card h-100" style="width: 18rem;">
-                            <img src="images/game-show-app.png" class="card-img-top" alt="Mobile phone with sound">
-                            <div class="card-body">
-                                <h5 class="card-title">Game Show App</h5>
-                                <p class="card-text">Utilizing Javascript, I created a browser version of
-                                    “Wheel
-                                    of
-                                    Success,” a word guessing
-                                    game that generates a random phrase that players will try to guess
-                                    by entering different letters into the program.
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://alyssalbailey.github.io/game-show-app/"
-                                    class="btn btn-primary text-white">
-                                    View Project
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col col-md-6 col-lg-4 col-xl-3 mb-3">
-                        <div class="card h-100" style="width: 18rem;">
-                            <img src="images/photo-gallery.png" class="card-img-top" alt="Stacked pictures">
-                            <div class="card-body">
-                                <h5 class="card-title">Interactive Photo Gallery</h5>
-                                <p class="card-text">Created an
-                                    interactive, searchable gallery of photos using JavaScript and the CSS Grid Layout.
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://alyssalbailey.github.io/photo-gallery/"
-                                    class="btn btn-primary text-white">
-                                    View Project
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col col-md-6 col-lg-4 col-xl-3 mb-3">
-                        <div class="card h-100" style="width: 18rem;">
-                            <img src="images/mobile-first.png" class="card-img-top" alt="Mobile phone with pink and orange background">
-                            <div class="card-body">
-                                <h5 class="card-title">Mobile-First Layout</h5>
-                                <p class="card-text">Designing web pages that look and function the same across
-                                    multiple
-                                    devices
-                                    using HTML, CSS and responsive design. 
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://alyssalbailey.github.io/mobile-first/"
-                                    class="btn btn-primary text-white">
-                                    View Project
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col col-md-6 col-lg-4 col-xl-3 mb-3">
-                        <div class="card h-100" style="width: 18rem;">
-                            <img src="images/online-registration-form.png" class="card-img-top" alt="Blue checklist form">
-                            <div class="card-body">
-                                <h5 class="card-title">Online Registration Form</h5>
-                                <p class="card-text">Built a responsive, mobile-first registration form
-                                    using a variety of
-                                    HTML form input types and attributes.
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://alyssalbailey.github.io/online-registration-form/"
-                                    class="btn btn-primary text-white">
-                                    View Project
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                <!--        
-                    <div class="col col-md-6 col-lg-4 col-xl-3 mb-3">
-                        <div class="card h-100" style="width: 18rem;">
-                            <img src="images/web-style-guide.png" class="card-img-top" alt="Mobile phone with various content blocks">
-                            <div class="card-body">
-                                <h5 class="card-title">Web Style Guide</h5>
-                                <p class="card-text">Created a style guide using Sass to act as my own
-                                    personal, micro-framework that I can drop into any project to speed up styling
-                                    and development.
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://alyssalbailey.github.io/web-style-guide/"
-                                    class="btn btn-primary text-white">
-                                    View Project
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-      
-                
-                    <div class="col col-md-6 col-lg-4 col-xl-3 mb-3">
-                        <div class="card h-100" style="width: 18rem;">
-                            <img src="images/personal-portfolio.png" class="card-img-top" alt="Laptop with light-blue and yellow background">
-                            <div class="card-body">
-                                <h5 class="card-title">Personal Profile Page</h5>
-                                <p class="card-text">Customized a personal online profile by adding
-                                    graphics, custom text and improving the overall look of the web page—a friendly introduction to HTML and CSS.
-                                </p>
-                            </div>
-                                <div class="card-footer bg-lg">
-                                    <a href="https://alyssalbailey.github.io/Techdegree-Project-1/" 
-                                        class="btn btn-primary text-white">View Project
-                                    </a>
+                            <!--essio website Content-->
+                            <div class="col col-md-6 col-lg-4 col-xl-3 mb-3">
+                                <div class="card h-100" style="width: 18rem;">
+                                    <img src="images/esseio-logo.png" class="card-img-top" alt="esseio logo">
+                                    <div class="card-body">
+                                        <h5 class="card-title">esseio</h5>
+                                        <p class="card-text">
+                                            Experience the soothing world of DIY home improvement with step-by-step instructions on a new website
+                                            inspired by the ASMR sensations from my YouTube channel.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="https://esseio.com/"
+                                            target="#_blank"
+                                            class="btn btn-primary text-white">
+                                            Visit Website
+                                        </a>
+                                    </div>
                                 </div>
-                            
-                        </div>
+                            </div>
+        
+    
+                            <!--Level up Healing Content-->
+                            <div class="col col-md-6 col-lg-4 col-xl-3 mb-3">
+                                <div class="card h-100" style="width: 18rem;">
+                                    <img src="images/level-up-healing.png" class="card-img-top" alt="Tetris Inspired Logo of Level Up Healing, LLC">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Level Up Healing</h5>
+                                        <p class="card-text">
+                                            The Level Up Healing LLC website was designed and developed to help the Reiki practitioner
+                                            reach more clients across the United States and improve their overall brand recognition.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="https://www.leveluphealing.net/"
+                                            target="#_blank"
+                                            class="btn btn-primary text-white">
+                                            Visit Website
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
                     </div>
-                    end of content tile-->    
-
                 </div>
                 
-            </div>
+                <div class="tab-pane fade" id="pills-development" role="tabpanel" aria-labelledby="pills-development-tab" tabindex="0">
+                    
+                    <div class="row justify-content-center">
+                        <div class="card-group">
+                            <div class="col col-md-6 col-lg-4 col-xl-3 mb-3">
+                                <div class="card h-100" style="width: 18rem;">
+                                    <img src="images/employee-directory.png" class="card-img-top" alt="Blue employee card with dark blue silhouette">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Employee Directory</h5>
+                                        <p class="card-text">
+                                            Created an employee directory by communicating with a
+                                            third-party
+                                            API (Random User Generator API) and listed the data in a grid with the employee's thumbnail image, full name, email and location.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="https://alyssalbailey.github.io/employee-directory/"
+                                            class="btn btn-primary text-white">
+                                            View Project
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col col-md-6 col-lg-4 col-xl-3 mb-3">
+                                <div class="card h-100" style="width: 18rem;">
+                                    <img src="images/web-app.png" class="card-img-top" alt="Desktop Computer with Bar Graphs on screen">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Web App Dashboard</h5>
+                                        <p class="card-text">Built a beautiful, interactive dashboard complete with JavaScript-driven
+                                            charts and graphs using advanced techniques including SVG graphics and user
+                                            interface components
+                                            that promotes interactivity and usability.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="https://alyssalbailey.github.io/web-app-dashboard/"
+                                            class="btn btn-primary text-white">
+                                            View Project
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col col-md-6 col-lg-4 col-xl-3 mb-3">
+                                <div class="card h-100" style="width: 18rem;">
+                                    <img src="images/game-show-app.png" class="card-img-top" alt="Mobile phone with sound">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Game Show App</h5>
+                                        <p class="card-text">Utilizing Javascript, I created a browser version of
+                                            “Wheel
+                                            of
+                                            Success,” a word guessing
+                                            game that generates a random phrase that players will try to guess
+                                            by entering different letters into the program.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="https://alyssalbailey.github.io/game-show-app/"
+                                            class="btn btn-primary text-white">
+                                            View Project
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col col-md-6 col-lg-4 col-xl-3 mb-3">
+                                <div class="card h-100" style="width: 18rem;">
+                                    <img src="images/photo-gallery.png" class="card-img-top" alt="Stacked pictures">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Interactive Photo Gallery</h5>
+                                        <p class="card-text">Created an
+                                            interactive, searchable gallery of photos using JavaScript and the CSS Grid Layout.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="https://alyssalbailey.github.io/photo-gallery/"
+                                            class="btn btn-primary text-white">
+                                            View Project
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col col-md-6 col-lg-4 col-xl-3 mb-3">
+                                <div class="card h-100" style="width: 18rem;">
+                                    <img src="images/mobile-first.png" class="card-img-top" alt="Mobile phone with pink and orange background">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mobile-First Layout</h5>
+                                        <p class="card-text">Designing web pages that look and function the same across
+                                            multiple
+                                            devices
+                                            using HTML, CSS and responsive design. 
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="https://alyssalbailey.github.io/mobile-first/"
+                                            class="btn btn-primary text-white">
+                                            View Project
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col col-md-6 col-lg-4 col-xl-3 mb-3">
+                                <div class="card h-100" style="width: 18rem;">
+                                    <img src="images/online-registration-form.png" class="card-img-top" alt="Blue checklist form">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Online Registration Form</h5>
+                                        <p class="card-text">Built a responsive, mobile-first registration form
+                                            using a variety of
+                                            HTML form input types and attributes.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="https://alyssalbailey.github.io/online-registration-form/"
+                                            class="btn btn-primary text-white">
+                                            View Project
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>           
+                </div>
+            </div>     
+            
         </section> <!--/portfolio cards-->
 
         <!-- Achievement Intro -->
