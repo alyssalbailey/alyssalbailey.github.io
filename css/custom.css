@@ -31,6 +31,12 @@ a:focus {
   color: white;
 }
 
+/* Change font color for the tab buttons */
+#pills-websites-tab, #pills-development-tab {
+  color: black !important;
+  font-size: 20px;
+}
+
 /* Centering Cards On XS Screens - Bootstrap Doesn't Have XS Class */
 .card {
   margin: 0 auto;
