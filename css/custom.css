@@ -31,14 +31,11 @@ a:focus {
   color: white;
 }
 
-/* Updating the Style of Active Nav-Pill Items */
-.nav-pills .nav-item .nav-link.active {
-  background-color: #0399ff;
-  border-color: #0d6efd;
+/* Change font color for the tab buttons */
+#pills-websites-tab, #pills-development-tab {
+  color: black !important;
+  font-size: 20px;
 }
-
-/* Updating the style of the Inactive Nav-Pill Items */
-
 
 /* Centering Cards On XS Screens - Bootstrap Doesn't Have XS Class */
 .card {
